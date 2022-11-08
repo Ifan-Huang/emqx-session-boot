@@ -1,0 +1,24 @@
+emqx:
+  host: 18.server
+  port: 1883
+  username: dev
+  password: dev
+  policy: 1
+  isTlsConnection: false
+  isCleanSession: false
+  clientId: ifanhuang-self
+  timeout: 60
+  keepAlive: 60
+#  topic: emq-topic-b855b10a,emq-topic-b855b10b,emq-topic-b855b10c,emq-topic-b855b10d
+  willTopic: willTopic
+  qos: 1
+  retain: false
+  callSubBackTopic: callBack/recharge
+  callBackTopic: callBack/recharge
+  callBackQos: 0
+  timeWait: 5000
+#  asyncUrlMqtt: http://qx2n1.l2021.pw:8081/api/v4/clients/
+
+spring:
+  main:
+    allow-circular-references: true
